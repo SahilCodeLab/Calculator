@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Price & Quantity Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📦 Price & Quantity Calculator</h1>
+
+    <section>
+      <h2>1️⃣ Price per KG → Kitne gram ka kitna?</h2>
+      <input id="pricePerKg" type="number" placeholder="e.g. 200" />
+      <button onclick="calculatePrices()">Calculate</button>
+      <div id="priceResult" class="result"></div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>2️⃣ Budget → Kitna saman milega?</h2>
+      <input id="price" type="number" placeholder="Price per kg" />
+      <input id="budget" type="number" placeholder="Aapka budget ₹" />
+      <button onclick="calculateQuantity()">Calculate</button>
+      <div id="quantityResult" class="result"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script> <!-- compiled TypeScript -->
+</body>
+</html>
